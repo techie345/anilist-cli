@@ -1,0 +1,21 @@
+[project]
+name = "anilist-cli"
+version = "0.1.0"
+description = "A simple CLI for AniList: new releases and your watch/read lists"
+requires-python = ">=3.8"
+readme = "README.md"
+dependencies = [
+    "click>=8.1",
+    "rich>=13.0",
+    "requests>=2.31",
+]
+
+[project.scripts]
+anilist-cli = "anilist_cli.main:main"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["anilist_cli"]
